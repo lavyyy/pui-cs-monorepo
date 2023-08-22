@@ -1,0 +1,4 @@
+1. Print first and last name as an introduction
+2. Print my major and where I go to school
+3. Print my favorite animal
+4. Print where you can reach me
