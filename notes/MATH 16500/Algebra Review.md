@@ -34,8 +34,6 @@ $$ = \frac{x^2 + 2x +6} {(x+2)(x-1)} $$
 > [!NOTE] Rule when canceling tops and bottoms
 > When you're adding terms on both the top and bottom you cant cancel stuff
 > You can only cancel when they're multiplied
-> #### Ex
-> $$  $$
 
 Multiplying factions by each other
 $$ \frac{a}{b} * \frac{c}{d} $$
