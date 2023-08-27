@@ -13,13 +13,70 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/MATH 16500/Algebra Review.md",
+                "file": "notes/MATH 16500/Algebra Review cont..md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "b2b62b6d21adc7ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/Algebra Review cont..md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "67ad1252a317c21f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/Trig Review.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9bd678e0f93a1340",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/Trig Review.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3f251a4581915b4",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Excalidraw/Pasted image 20230825123903.png"
+              }
+            }
+          },
+          {
+            "id": "fd418207914a07ab",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Excalidraw/Pasted image 20230825123903.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MATH 16500/Algebra Review.md",
+                "file": "notes/MATH 16500/Trig Review.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MATH 16500/Algebra Review.md",
+                "file": "notes/MATH 16500/Trig Review.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MATH 16500/Algebra Review.md"
+                "file": "notes/MATH 16500/Trig Review.md"
               }
             }
           }
@@ -143,24 +200,35 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "30dddd34799d5a66",
+  "active": "9bd678e0f93a1340",
   "lastOpenFiles": [
+    "Excalidraw/Pasted image 20230825123903.png",
+    "Excalidraw/Drawing 2023-08-25 12.10.37.excalidraw.md",
+    "notes/MATH 16500/Trig Review.md",
+    "notes/MATH 16500/1.5 Limits.md",
+    "Pasted image 20230825123821.png",
+    "notes/SCI-I120/Partia Basu.md",
+    "notes/MATH 16500/Algebra Review cont..md",
+    "notes/MATH 16500/Algebra Review.md",
+    "Excalidraw",
+    "assignments/CSCI 23000/week1/inclass1.py",
+    "assignments/CSCI 23000/week2",
+    "assignments/CSCI 23000/week1/lab1outline.txt",
+    "assignments/CSCI 23000/week1/lab1.py",
+    "assignments/CSCI 23000/week1",
+    "Untitled.md",
     "README.md",
+    "notes/SCI-I120",
     "assignments/Computing I",
     "assignments",
     "A Calculus I nalytic Geometry & Calculus I/Algebra Review.md",
-    "notes/MATH 16500/Algebra Review.md",
     "notes/MATH 16500",
-    "notes",
-    "Computing I",
-    "I",
-    "Computing",
     "Untitled.canvas",
     "Elaboration.md",
-    "Bridge Lecture.md",
-    "A Calculus I nalytic Geometry & Calculus I"
+    "Bridge Lecture.md"
   ]
 }
