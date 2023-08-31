@@ -1,4 +1,12 @@
-1. Print first and last name as an introduction
-2. Print my major and where I go to school
-3. Print my favorite animal
-4. Print where you can reach me
+Description:
+Create a python file that utilizes the print function to write a simple introduction to the standard output.
+This output will include my first and last name, where I go to school, my major, an interesting fact about me, and where you can reach me.
+This will also include a special character
+
+Design:
+Block comment including my name, this course, the title of the assignment, and date.
+A single line comment to demonstrate how to write a single comment
+Use the print function to write my first and last name
+Use the print function to write my major and school
+Use the print function to write my favorite animal, aswell as including an emoji as a special character
+Use the print function to write where you can reach me

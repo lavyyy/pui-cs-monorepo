@@ -22,12 +22,12 @@ When the denominators are different:
 
 #### Ex 1.
 Find common denominators
-$$ 1/2 + 1/3 $$
+$$ \frac{1}{2} + \frac{1}{3} $$
 Make them the same denominators
-$$ 1 * 3 /2*3 + 1*3 / 3*3 = 3/6 + 2/6 = 5/6 $$
+$$ \frac{1*3}{2*3} + \frac{1*3}{3*3} = \frac{3}{6} + \frac{2}{6} = \frac{5}{6} $$
 #### Ex 2.
 Need to make this one fraction using the same idea
-$$ 3/(x-1) + x/(x+2) $$
+$$ \frac{3}{(x-1)} + \frac{x}{(x+2)} $$
 $$ = \frac{3(x+2) + x(x-1)} {(x+2)(x-1)} $$
 $$ = \frac{x^2 + 2x +6} {(x+2)(x-1)} $$
 

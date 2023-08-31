@@ -46,7 +46,7 @@ When you have a negative exponent you have to flip it
 $$ a^{-n} = \frac{1}{a^{n}} $$
 $$ \frac{1}{a^{n}} = a^{-n}$$
 When you have a exponent that is a fraction you turn it into a square root
-$$ a^\frac{m}{n} = (n\sqrt{m})^m$$
+$$ a^\frac{m}{n} = (n\sqrt{a})^m$$
 $$ a^\frac{1}{n} = n\sqrt{a}$$
 
 
