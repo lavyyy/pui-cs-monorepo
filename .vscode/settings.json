@@ -1,0 +1,12 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.git": true,
+        "notes/**": true,
+    },
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  }
+
+}

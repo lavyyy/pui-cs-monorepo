@@ -61,7 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/MATH 16500/1.6 Limit Laws.md",
+                "file": "notes/MATH 16500/Algebra Review.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8cdc4af3556b0b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/1.5 Limits.md",
                 "mode": "source",
                 "source": false
               }
@@ -88,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -154,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MATH 16500/1.6 Limit Laws.md",
+                "file": "notes/MATH 16500/1.5 Limits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MATH 16500/1.6 Limit Laws.md",
+                "file": "notes/MATH 16500/1.5 Limits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MATH 16500/1.6 Limit Laws.md"
+                "file": "notes/MATH 16500/1.5 Limits.md"
               }
             }
           }
@@ -216,28 +228,30 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "99592eb82e61e72d",
+  "active": "a8cdc4af3556b0b2",
   "lastOpenFiles": [
-    "notes/MATH 16500/1.5 Limits.md",
     "notes/MATH 16500/1.6 Limit Laws.md",
-    "notes/MATH 16500/Trig Review.md",
     "notes/MATH 16500/Algebra Review cont..md",
+    "notes/MATH 16500/Trig Review.md",
+    "notes/MATH 16500/1.8 Continuity.md",
     "notes/MATH 16500/Algebra Review.md",
+    "notes/MATH 16500/Absolute Value.md",
+    "assignments/CSCI 23000/week2/inclass2.py",
+    "assignments/CSCI 23000/pyproject.toml",
+    "pyproject.toml",
+    "assignments/CSCI 23000/Pipfile.lock",
+    "assignments/CSCI 23000/Pipfile",
+    "assignments/pyproject.toml",
+    "assignments/CSCI 23000/week2/lab2.py",
+    "notes/MATH 16500/1.5 Limits.md",
     "assignments/CSCI 23000/week2/inclass1.py",
     "assignments/CSCI 23000/week2/inclass.py",
-    "assignments/CSCI 23000/Pipfile",
     "README.md",
     "Excalidraw/Pasted image 20230825123903.png",
     "Excalidraw/Drawing 2023-08-25 12.10.37.excalidraw.md",
     "Pasted image 20230825123821.png",
     "notes/SCI-I120/Partia Basu.md",
     "Excalidraw",
-    "assignments/CSCI 23000/week1/inclass1.py",
-    "assignments/CSCI 23000/week2",
-    "assignments/CSCI 23000/week1/lab1outline.txt",
-    "assignments/CSCI 23000/week1/lab1.py",
-    "assignments/CSCI 23000/week1",
-    "notes/SCI-I120",
     "A Calculus I nalytic Geometry & Calculus I/Algebra Review.md",
     "Untitled.canvas",
     "Elaboration.md",
