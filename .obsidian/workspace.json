@@ -80,6 +80,30 @@
             }
           },
           {
+            "id": "649454477576066b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/1.6 Limit Laws.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ece6aca51b39a445",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/1.6 Limit Laws.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f3f251a4581915b4",
             "type": "leaf",
             "state": {
@@ -100,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -166,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MATH 16500/1.5 Limits.md",
+                "file": "notes/MATH 16500/1.6 Limit Laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MATH 16500/1.5 Limits.md",
+                "file": "notes/MATH 16500/1.6 Limit Laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MATH 16500/1.5 Limits.md"
+                "file": "notes/MATH 16500/1.6 Limit Laws.md"
               }
             }
           }
@@ -228,12 +252,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8cdc4af3556b0b2",
+  "active": "ece6aca51b39a445",
   "lastOpenFiles": [
+    "notes/MATH 16500/2.1-2.2 Derivatives.md",
     "notes/MATH 16500/1.6 Limit Laws.md",
+    "notes/MATH 16500/1.8 Continuity.md",
+    "notes/MATH 16500/1.5 Limits.md",
     "notes/MATH 16500/Algebra Review cont..md",
     "notes/MATH 16500/Trig Review.md",
-    "notes/MATH 16500/1.8 Continuity.md",
     "notes/MATH 16500/Algebra Review.md",
     "notes/MATH 16500/Absolute Value.md",
     "assignments/CSCI 23000/week2/inclass2.py",
@@ -243,7 +269,6 @@
     "assignments/CSCI 23000/Pipfile",
     "assignments/pyproject.toml",
     "assignments/CSCI 23000/week2/lab2.py",
-    "notes/MATH 16500/1.5 Limits.md",
     "assignments/CSCI 23000/week2/inclass1.py",
     "assignments/CSCI 23000/week2/inclass.py",
     "README.md",
