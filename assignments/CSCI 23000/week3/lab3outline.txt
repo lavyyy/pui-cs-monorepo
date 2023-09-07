@@ -1,0 +1,10 @@
+Step 1: Define Global Constants
+Step 2: Import Necessary Libraries
+Step 3: Define the passwordGenerator Function
+Step 4: Define Constants
+Step 5: Initialize an Empty List
+Step 6: Define a Nested Function getRandomCharacter
+Step 7: Generate the Password
+Step 8: Join the Password List
+Step 9: Return the Password
+Step 10: Print the password to the console
