@@ -1,0 +1,59 @@
+Initialize the balance to $1000.00.
+
+balance = 1000.00
+
+Display a welcome message and the ATM menu options.
+
+print("[ATM] Welcome to the ATM!")
+print(" 1. Check Balance")
+print(" 2. Withdraw")
+print(" 3. Deposit")
+print(" 4. Quit")
+
+Prompt the user to make a selection and store their choice.
+choice = int(input("Please make your selection: "))
+
+Depending on the user's choice, perform one of the following actions:
+If the choice is 1, call the check_balance function.
+If the choice is 2, call the withdraw function and update the balance.
+If the choice is 3, call the deposit function and update the balance.
+If the choice is 4, exit the program.
+
+if choice == 1:
+    check_balance(balance)
+elif choice == 2:
+    balance = withdraw(balance)
+elif choice == 3:
+    balance = deposit(balance)
+elif choice == 4:
+    return
+else:
+    print("[ATM] Invalid choice. Please try again.")
+    main()  # Recursively call the main function to re-display the menu.
+
+Implement the check_balance function, which displays the current balance.
+def check_balance(balance):
+    print("[ATM] Your balance is $" + str(balance) + ".")
+
+Implement the withdraw function, which asks the user for the withdrawal amount, checks if they have sufficient funds, and updates the balance.
+def withdraw(balance):
+    amount = float(input("[ATM] How much would you like to withdraw? $"))
+    if amount > balance:
+        print("[ATM] You do not have enough money to withdraw that amount.")
+        return balance
+    else:
+        balance -= amount
+        print("[ATM] You have withdrawn $" + str(amount) + ".")
+        return balance
+
+Implement the deposit function, which asks the user for the deposit amount and updates the balance.
+
+def deposit(balance):
+    amount = float(input("[ATM] How much would you like to deposit? $"))
+    balance += amount
+    print("[ATM] You have deposited $" + str(amount) + ".")
+    return balance
+
+Run the main function.
+if __name__ == "__main__":
+    main()
