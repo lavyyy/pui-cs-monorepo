@@ -1,0 +1,80 @@
+In main.py:
+
+from utils import get_budget, get_total_budget
+This line imports two functions, get_budget and get_total_budget, from a module named utils. These functions are used in the main program to perform tasks related to movie budgets.
+
+def main():
+This defines the main() function, which is the entry point of the program. The main program logic is encapsulated within this function.
+
+    # Formatted as "Movie Name, Year of release, Budget"
+    movie_data = "Movie1, 2019, 500_000; Movie2, 2023, 1_000_000; Movie3, 2025, 1_500_000; Movie4, 2027, 2_000_000; Movie5, 2029, 2_500_000"
+Here, a string variable movie_data is defined. It contains information about five movies in a specific format. Each movie's data is separated by a semicolon and a space, and within each movie's data, the movie name, release year, and budget are separated by commas.
+
+    # Task 1: Get the budget of Movie3
+    print(get_budget(movie_data, "Movie3"))
+This line prints the budget of a specific movie, "Movie3," by calling the get_budget function with movie_data and "Movie3" as arguments.
+
+    # Task 2: Add up the budgets of all the movies
+    print(get_total_budget(movie_data))
+This line prints the total budget of all movies by calling the get_total_budget function with movie_data as an argument.
+
+if __name__ == "__main__":
+    main()
+This block ensures that the main() function is executed when the script is run. If the script is imported as a module in another program, the main() function will not run automatically.
+
+
+In utils.py:
+
+def get_budget(movie_data: str, movie_name: str):
+This defines the get_budget function, which is responsible for extracting the budget of a specific movie from the movie_data string.
+
+    # Split the movie data into a list of movies
+    movies = movie_data.split("; ")
+This line splits the movie_data string into a list of individual movie entries using the delimiter "; ".
+
+    # Loop through each movie
+    for movie in movies:
+This begins a loop that iterates through each movie entry in the movies list.
+
+        # Split the movie into a list of attributes
+        attributes = movie.split(", ")
+This line splits each movie entry into a list of attributes using the delimiter ", ". These attributes include the movie name, release year, and budget.
+
+        # Check if the movie name matches the movie we're looking for
+        if attributes[0] == movie_name:
+Here, it checks if the movie name in the attributes list (attributes[0]) matches the specified movie_name.
+
+            # Return the budget
+            return int(attributes[2])
+If a match is found, it returns the budget (converted to an integer) from attributes[2], which is the third element in the attributes list.
+
+    # If we get here, the movie wasn't found
+    return None
+If the loop completes without finding a matching movie name, the function returns None to indicate that the movie was not found.
+
+def get_total_budget(movie_data: str):
+This defines the get_total_budget function, which calculates the total budget by summing the budgets of all movies in the movie_data string.
+
+    # Split the movie data into a list of movies
+    movies = movie_data.split("; ")
+This line splits the movie_data string into a list of individual movie entries using the delimiter "; ".
+
+    # Initialize the total budget
+    total_budget = 0
+It initializes an integer variable total_budget to 0. This variable will accumulate the total budget as the function iterates through the movies.
+
+    # Loop through each movie
+    for movie in movies:
+This begins a loop that iterates through each movie entry in the movies list.
+
+        # Split the movie into a list of attributes
+        attributes = movie.split(", ")
+This line splits each movie entry into a list of attributes using the delimiter ", ". These attributes include the movie name, release year, and budget.
+
+        # Add the budget to the total budget
+        total_budget += int(attributes[2])
+Inside the loop, it adds the budget (converted to an integer) from attributes[2] to the total_budget variable.
+
+    # Return the total budget
+    return total_budget
+Finally, the function returns the total_budget, which represents the sum of budgets of all movies in the movie_data string.
