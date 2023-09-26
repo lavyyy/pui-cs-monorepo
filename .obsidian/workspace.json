@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/MATH 16500/2.3 Derivative Formulas.md",
+                "file": "notes/MATH 16500/2.5 Chain Rule.md",
                 "mode": "source",
                 "source": false
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MATH 16500/2.3 Derivative Formulas.md",
+                "file": "notes/MATH 16500/2.5 Chain Rule.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MATH 16500/2.3 Derivative Formulas.md",
+                "file": "notes/MATH 16500/2.5 Chain Rule.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MATH 16500/2.3 Derivative Formulas.md"
+                "file": "notes/MATH 16500/2.5 Chain Rule.md"
               }
             }
           },
@@ -264,21 +264,23 @@
   },
   "active": "ece6aca51b39a445",
   "lastOpenFiles": [
+    "assignments/CSCI 23000/week5/__pycache__/utils.cpython-311.pyc",
+    "assignments/CSCI 23000/week5/utils.py",
+    "assignments/CSCI 23000/week5/main.py",
+    "assignments/CSCI 23000/week5/design.txt",
+    "assignments/CSCI 23000/week5/__pycache__",
+    "assignments/CSCI 23000/week5",
+    "notes/MATH 16500/2.7 Rates of Change.md",
     "notes/MATH 16500/2.5 Chain Rule.md",
+    "notes/MATH 16500/2.3 Derivative Formulas.md",
     "assignments/CSCI 23000/week4/__pycache__/utils.cpython-311.pyc",
     "assignments/CSCI 23000/week4/utils.py",
     "assignments/CSCI 23000/week4/lab4.py",
     "assignments/CSCI 23000/week4/keyboardInputPseudocode.txt",
     "assignments/CSCI 23000/week4/__pycache__",
-    "assignments/CSCI 23000/week4",
-    "notes/MATH 16500/2.3 Derivative Formulas.md",
-    "assignments/CSCI 23000/week4/lab4.py.ca4856b1384fcc1efedb32de6b2e2b44.tmp",
     "notes/MATH 16500/2.1-2.2 Derivatives.md",
     "notes/MATH 16500/1.6 Limit Laws.md",
     "notes/MATH 16500/1.8 Continuity.md",
-    "assignments/CSCI 23000/week3/lab3outline.txt",
-    "assignments/CSCI 23000/week3/lab3.py.28f887804e95a9d7f8bf073fa5c20ce7.tmp",
-    "assignments/CSCI 23000/week3/lab3.py",
     "notes/MATH 16500/1.5 Limits.md",
     "notes/MATH 16500/Algebra Review cont..md",
     "notes/MATH 16500/Trig Review.md",
