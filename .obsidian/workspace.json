@@ -35,14 +35,28 @@
             "id": "6a187314280ff698",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Pasted image 20230927130619.png"
+                "file": "notes/MATH 16500/2.8 Related Rates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9522d9fdd6b17c6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/2.8 Related Rates.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -108,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Pasted image 20230927130619.png",
+                "file": "notes/MATH 16500/2.8 Related Rates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Pasted image 20230927130619.png",
+                "file": "notes/MATH 16500/2.8 Related Rates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Pasted image 20230927130619.png"
+                "file": "notes/MATH 16500/2.8 Related Rates.md"
               }
             }
           }
@@ -180,18 +194,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9c6de946cbab30e",
+  "active": "9522d9fdd6b17c6b",
   "lastOpenFiles": [
+    "Pasted image 20230929125837.png",
+    "Excalidraw/Drawing 2023-09-29 12.55.39.excalidraw.md",
     "notes/MATH 16500/2.8 Related Rates.md",
-    "notes/MATH 16500/Pythagorean Triples.md",
+    "Excalidraw/Drawing 2023-09-29 12.31.54.excalidraw.md",
+    "Excalidraw/Pasted image 20230825123903.png",
+    "Excalidraw/Pasted image 20230929123532.png",
     "Excalidraw/Pasted image 20230927130619.png",
+    "notes/MATH 16500/Pythagorean Triples.md",
     "Excalidraw/Drawing 2023-09-27 13.02.59.excalidraw.md",
     "Excalidraw/Pasted image 20230927124214.png",
     "Excalidraw/Drawing 2023-09-27 12.38.25.excalidraw.md",
     "Excalidraw/Pasted image 20230927122619.png",
     "notes/MATH 16500/Trig Review.md",
     "Excalidraw/Drawing 2023-09-27 12.21.29.excalidraw.md",
-    "Excalidraw/Pasted image 20230825123903.png",
     "Excalidraw/Drawing 2023-08-25 12.10.37.excalidraw.md"
   ]
 }
