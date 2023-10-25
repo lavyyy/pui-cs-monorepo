@@ -11,6 +11,7 @@ def generate_new_dictionary(user_data: dict):
     for user in user_data:
         new_dict[user] = dict(
             email=user_data[user].get("email"),
+            address=user_data[user].get("address"),
             age=user_data[user].get("age"),
             private_access=has_private_access(user_data[user]),
         )
