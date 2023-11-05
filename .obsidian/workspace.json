@@ -61,9 +61,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/MATH 16500/3.2 Mean Value Theorem.md",
+                "file": "notes/MATH 16500/3.4 Infinite Limits.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "8455c97c4dc4ceb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/MATH 16500/4.1 Areas and Distances.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb180b4c03acd9ba",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-11-03 12.30.49.excalidraw.md"
               }
             }
           },
@@ -78,7 +100,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -144,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MATH 16500/3.2 Mean Value Theorem.md",
+                "file": "notes/MATH 16500/4.1 Areas and Distances.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MATH 16500/3.2 Mean Value Theorem.md",
+                "file": "notes/MATH 16500/4.1 Areas and Distances.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +216,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MATH 16500/3.2 Mean Value Theorem.md"
+                "file": "notes/MATH 16500/4.1 Areas and Distances.md"
               }
             }
           }
@@ -216,16 +238,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9c6de946cbab30e",
+  "active": "8455c97c4dc4ceb3",
   "lastOpenFiles": [
-    "notes/MATH 16500/3.5 Curve Sketching.md",
+    "Pasted image 20231103124755.png",
+    "Excalidraw/Drawing 2023-10-25 12.43.47.excalidraw.md",
+    "Excalidraw/Drawing 2023-11-03 12.30.49.excalidraw.md",
+    "notes/MATH 16500/4.1 Areas and Distances.md",
+    "Excalidraw/Pasted image 20231103124313.png",
     "notes/MATH 16500/3.4 Infinite Limits.md",
+    "notes/MATH 16500/3.5 Curve Sketching.md",
+    "notes/MATH 16500/2.8 Related Rates.md",
     "notes/MATH 16500/Algebra Review.md",
     "notes/MATH 16500/Algebra Review cont..md",
     "notes/MATH 16500/Trig Review.md",
     "notes/MATH 16500/1.5 Limits.md",
     "Excalidraw/Pasted image 20231025124522.png",
-    "Excalidraw/Drawing 2023-10-25 12.43.47.excalidraw.md",
     "notes/MATH 16500/3.3 How Derivatives Affect the Shape of the Graph.md",
     "assignments/CSCI 23000/week8/__pycache__/utils.cpython-310.pyc",
     "assignments/CSCI 23000/week8/utils.py",
@@ -241,7 +268,6 @@
     "README.md",
     "notes/MATH 16500/2.9 Linear Approximations and Differentials.md",
     "Excalidraw/Drawing 2023-10-04 12.33.06.excalidraw.md",
-    "notes/MATH 16500/2.8 Related Rates.md",
     "Excalidraw/Pasted image 20230929125837.png",
     "notes/MATH 16500/2.7 Rates of Change.md",
     "Excalidraw/Drawing 2023-09-29 12.55.39.excalidraw.md",
