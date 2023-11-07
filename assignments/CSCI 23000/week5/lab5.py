@@ -5,7 +5,7 @@ Assignment: Lab 5
 Date: 9/24/2023
 """
 
-from utils import get_budget, get_total_budget
+from lab5_utils import get_budget, get_total_budget
 
 
 def main():

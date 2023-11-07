@@ -5,7 +5,7 @@ Assignment: Lab 4
 Date: 9/17/2023
 """
 
-from utils import check_balance, withdraw, deposit
+from lab4_utils import check_balance, withdraw, deposit
 
 
 def main():

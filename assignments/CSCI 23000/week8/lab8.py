@@ -5,7 +5,8 @@ Assignment: Lab 8
 Date: 10/24/2023
 """
 
-from utils import generate_new_dictionary, search_data
+from lab8_utils import generate_new_dictionary, search_data
+
 
 def main():
     user_data = {}
