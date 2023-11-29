@@ -3,6 +3,7 @@ import os
 from User import User
 from Admin import Admin
 from Student import Student
+from utils import get_index_from_header
 
 
 # Singleton
@@ -57,10 +58,20 @@ class Database:
             return None
 
         with open(file_name, "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+            password_index = get_index_from_header(
+                "password",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                # TODO: Use dyanmic indexing
-                if rows[1] == username and rows[2] == password:
+                if rows[username_index] == username and rows[password_index] == password:
                     if role == "admin":
                         return Admin(username)
                     if role == "student":
@@ -70,6 +81,7 @@ class Database:
 
     def register(self, username, password, firstname, lastname) -> bool:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            # get the last id in the file
             last_id = f.readlines()[-1].split(",")[0]
             if last_id.isnumeric():
                 new_id = int(last_id) + 1
@@ -82,17 +94,41 @@ class Database:
 
     def get_courses(self, username: str) -> list[str] | None:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            user_id_index = get_index_from_header(
+                "id",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[1] == username:
-                    user_id = rows[0]
+                if rows[username_index] == username:
+                    user_id = rows[user_id_index]
 
         courses = []
         with open("db/enrollments.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            user_id_index = get_index_from_header(
+                "student_id",
+                header,
+            )
+
+            course_id_index = get_index_from_header(
+                "course_identifier",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[0] == user_id:
-                    courses.append(rows[1])
+                if rows[user_id_index] == user_id:
+                    courses.append(rows[course_id_index])
 
         if len(courses) == 0:
             return None
@@ -102,9 +138,16 @@ class Database:
     def get_all_courses(self) -> list[str] | None:
         courses = []
         with open("db/courses.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            course_id_index = get_index_from_header(
+                "identifier",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                courses.append(rows[0])
+                courses.append(rows[course_id_index])
 
         if len(courses) == 0:
             return None
@@ -113,10 +156,27 @@ class Database:
 
     def get_course_by_id(self, course_identifier: str) -> str | None:
         with open("db/courses.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            identifier_index = get_index_from_header(
+                "identifier",
+                header,
+            )
+
+            name_index = get_index_from_header(
+                "name",
+                header,
+            )
+
+            professor_index = get_index_from_header(
+                "professor",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[0] == course_identifier:
-                    return f"ID: {rows[0]}\nName: {rows[1]}\nProfessor: {rows[2]}\n"
+                if rows[identifier_index] == course_identifier:
+                    return f"ID: {rows[identifier_index]}\nName: {rows[name_index]}\nProfessor: {rows[professor_index]}\n"
 
         return None
 
@@ -127,10 +187,22 @@ class Database:
 
     def add_student_to_course(self, username: str, course_identifier: str) -> bool:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            id_index = get_index_from_header(
+                "id",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[1] == username:
-                    user_id = rows[0]
+                if rows[username_index] == username:
+                    user_id = rows[id_index]
 
         with open("db/enrollments.csv", "a", encoding="utf-8") as f:
             f.write(f"{user_id},{course_identifier}\n")
@@ -138,53 +210,128 @@ class Database:
 
     def get_student(self, username: str) -> str | None:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            firstname_index = get_index_from_header(
+                "firstname",
+                header,
+            )
+
+            lastname_index = get_index_from_header(
+                "lastname",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.split(",")
-                if rows[1] == username:
-                    return f"Username: {rows[1]}\nFirst Name: {rows[3]}\nLast Name: {rows[4]}\n"
+                if rows[username_index] == username:
+                    return f"Username: {rows[username_index]}\nFirst Name: {rows[firstname_index]}\nLast Name: {rows[lastname_index]}\n"
 
         return None
 
     def get_student_firstname(self, username: str) -> str | None:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            firstname_index = get_index_from_header(
+                "firstname",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.split(",")
-                if rows[1] == username:
-                    return rows[3]
+                if rows[username_index] == username:
+                    return rows[firstname_index]
 
         return None
 
     def get_student_lastname(self, username: str) -> str | None:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            lastname_index = get_index_from_header(
+                "lastname",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.split(",")
-                if rows[1] == username:
-                    return rows[4]
+                if rows[username_index] == username:
+                    return rows[lastname_index]
 
         return None
 
     def get_enrollments(self, username) -> list[str] | None:
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            id_index = get_index_from_header(
+                "id",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[1] == username:
-                    user_id = rows[0]
+                if rows[username_index] == username:
+                    user_id = rows[id_index]
 
         enrollments = []
         with open("db/enrollments.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            user_id_index = get_index_from_header(
+                "student_id",
+                header,
+            )
+
+            course_id_index = get_index_from_header(
+                "course_identifier",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[0] == user_id:
-                    enrollments.append(rows[1])
+                if rows[user_id_index] == user_id:
+                    enrollments.append(rows[course_id_index])
+
+        if len(enrollments) == 0:
+            return None
 
         return enrollments
 
     def get_students(self) -> list[str] | None:
         students = []
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                students.append(rows[1])
+                students.append(rows[username_index])
 
         if len(students) == 0:
             return None
@@ -196,10 +343,22 @@ class Database:
 
         # read users to find the user_id
         with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            id_index = get_index_from_header(
+                "id",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[1] == username:
-                    user_id = rows[0]
+                if rows[username_index] == username:
+                    user_id = rows[id_index]
                     break
 
         if user_id is None:
@@ -210,9 +369,21 @@ class Database:
 
         # read enrollments and store all except the one to drop
         with open("db/enrollments.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            id_index = get_index_from_header(
+                "student_id",
+                header,
+            )
+
+            course_id_index = get_index_from_header(
+                "course_identifier",
+                header,
+            )
+
             for line in f.readlines():
                 rows = line.replace("\n", "").split(",")
-                if rows[0] == user_id and rows[1].strip() == course_identifier:
+                if rows[id_index] == user_id and rows[course_id_index].strip() == course_identifier:
                     enrollment_found = True
                 else:
                     updated_enrollments.append(line)
@@ -220,8 +391,57 @@ class Database:
         # rewrite the enrollments file only if the enrollment was found
         if enrollment_found:
             with open("db/enrollments.csv", "w", encoding="utf-8") as f:
+                # put the header back
+                f.write(header)
                 for line in updated_enrollments:
                     f.write(line)
             return True
+
+        return False
+
+    def is_student_in_course(self, username: str, course_identifier: str) -> bool:
+        user_id = None
+
+        # read users to find the user_id
+        with open("db/users.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            username_index = get_index_from_header(
+                "username",
+                header,
+            )
+
+            id_index = get_index_from_header(
+                "id",
+                header,
+            )
+
+            for line in f.readlines():
+                rows = line.replace("\n", "").split(",")
+                if rows[username_index] == username:
+                    user_id = rows[id_index]
+                    break
+
+        if user_id is None:
+            return False
+
+        # read enrollments and check if the user_id and course_identifier are in the file
+        with open("db/enrollments.csv", "r", encoding="utf-8") as f:
+            header = f.readline()
+
+            id_index = get_index_from_header(
+                "student_id",
+                header,
+            )
+
+            course_id_index = get_index_from_header(
+                "course_identifier",
+                header,
+            )
+
+            for line in f.readlines():
+                rows = line.replace("\n", "").split(",")
+                if rows[id_index] == user_id and rows[course_id_index].strip() == course_identifier:
+                    return True
 
         return False

@@ -96,6 +96,11 @@ class Admin(User):
             print("Course does not exist!")
             return
 
+        # check if student is already enrolled in course
+        if self.db.is_student_in_course(username, course_identifier) is not None:
+            print("Student is already enrolled in course!")
+            return
+
         if self.db.add_student_to_course(username, course_identifier):
             print("Student added to course!")
         else:
