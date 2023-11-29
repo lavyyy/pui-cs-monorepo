@@ -1,2 +1,4 @@
-id,username,password
-1,cayden,passwrd
+username,password
+cayden,passwrd
+admin,password
+anotheradmin,1234
