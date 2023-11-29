@@ -97,7 +97,7 @@ class Admin(User):
             return
 
         # check if student is already enrolled in course
-        if self.db.is_student_in_course(username, course_identifier) is not None:
+        if self.db.is_student_in_course(username, course_identifier) is True:
             print("Student is already enrolled in course!")
             return
 

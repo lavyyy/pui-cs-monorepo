@@ -10,7 +10,7 @@ from Database import Database
 
 
 def main():
-    db = Database()
+    db = Database.get_instance()
     logged_in = False
     login_attempts = 0
 

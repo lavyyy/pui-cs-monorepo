@@ -1,5 +1,6 @@
 from __future__ import annotations
 import os
+from threading import Lock
 from User import User
 from Admin import Admin
 from Student import Student
@@ -8,14 +9,21 @@ from utils import get_index_from_header
 
 # Singleton
 class Database:
-    instance: Database | None = None
+    _instance = None
+    _lock = Lock()
 
     def __init__(self):
-        if Database.instance is None:
-            Database.instance = self
-        else:
-            raise Exception("Database instance already exists.")
+        raise RuntimeError("Call get_instance() instead")
 
+    @classmethod
+    def get_instance(cls):
+        with cls._lock:
+            if cls._instance is None:
+                cls._instance = cls.__new__(cls)
+                cls._instance.init()
+            return cls._instance
+
+    def init(self):
         if not os.path.exists("db"):
             os.mkdir("db")
 
@@ -42,12 +50,6 @@ class Database:
                 encoding="utf-8",
             ) as f:
                 f.write("student_id,course_identifier\n")
-
-    @staticmethod
-    def get_instance() -> Database:
-        if Database.instance is None:
-            return Database()
-        return Database.instance
 
     def login(self, username, password, role) -> User | None:
         if role == "admin":
